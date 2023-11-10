@@ -61,21 +61,21 @@ public class StudentDatabase {
 			System.out.print("\nEnter course name to be enroll (Enter Q to quit): ");
 			course = in.nextLine();
 			switch (course) {
-		    case "History 101":
-		    case "Mathematics 101":
-		    case "English 101":
-		    case "Chemistry 101":
-		    case "Computer Science 101":
-		    	courseList.add(course);
-		        System.out.println("ENROLLED IN: " + course);
-		        break;
-		    case "Q":
-            case "q":
-                break;
-		    default:
-		        System.out.println("Invalid course selection: " + course);
-		        break;
-			}
+			    case "History 101":
+			    case "Mathematics 101":
+			    case "English 101":
+			    case "Chemistry 101":
+			    case "Computer Science 101":
+			    	courseList.add(course);
+			        System.out.println("ENROLLED IN: " + course);
+			        break;
+			    case "Q":
+	            	    case "q":
+                		break;
+		            default:
+		        	System.out.println("Invalid course selection: " + course);
+		        	break;
+		       } 
 		} while (!course.equalsIgnoreCase("Q"));
 		
 		enrolledCourses = courseList.toArray(new String[0]);
@@ -84,10 +84,9 @@ public class StudentDatabase {
 	}
 	
 	//Method to get tuition balance
-		public int getViewBalance() {
-			//
-			return tuitionBalance;
-		}
+	public int getViewBalance() {
+		return tuitionBalance;
+	}
 	
 	//vMethod to display tuition balance
 	public void viewBalance() {
