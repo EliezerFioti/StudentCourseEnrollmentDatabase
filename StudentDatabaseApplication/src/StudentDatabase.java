@@ -2,7 +2,7 @@
  * Program: Student Database Application 
  * Author: Eliezer 
  * Date: November 10, 2023
- * Description: This Java console program manages University student's course enrollment and calculates their balance
+ * Description: This Java OOP console program manages University student's course enrollment and calculates their balance
  */
 
 import java.util.ArrayList;
